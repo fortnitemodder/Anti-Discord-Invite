@@ -107,7 +107,7 @@ local function disable()
                 getgenv().ASDI_LastInvite = "https://discord.gg/"..game:GetService("HttpService"):JSONDecode(args["Body"])["args"]["code"]
                 
                 warn("Anti-Discord Server Invites | HOOKED DISCORD INVITE | LINK:\nhttps://discord.gg/"..game:GetService("HttpService"):JSONDecode(args["Body"])["args"]["code"])
-                message({Title = "Anti-Discord Server Invites", Text = "Hooked Discord invite\nWould you like to copy the invite's link?", Duration = 5, Button1 = "Copy", Callback = callback})
+                message({Title = "Anti-Discord Server Invites", Text = "Hooked Discord invite\nWould you like to copy the invite link?", Duration = 5, Button1 = "Copy", Callback = callback})
                 
                 return
                 
